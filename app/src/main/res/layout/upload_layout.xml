@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="140dp"
+            android:text="Results"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <TableLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="1"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:background="@android:color/background_dark">
+
+                <TextView
+                    android:id="@+id/elid1"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="50dp"
+                    android:text="Id"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic"
+                    app:fontFamily="monospace" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="50dp"
+                    android:text="Name"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="50dp"
+                    android:text="Note"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/background_dark">
+
+                <TextView
+                    android:id="@+id/elid"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="50dp"
+                    android:text="0"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="50dp"
+                    android:text="nom"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/lanote"
+                    android:layout_width="112dp"
+                    android:layout_height="150dp"
+                    android:background="@android:color/darker_gray"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="50dp"
+                    android:text="/10"
+                    android:textSize="38sp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="426dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="confirm"
+                android:textColor="@android:color/background_light"
+                android:textSize="26sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Edit"
+                android:textColor="@android:color/background_light"
+                android:textSize="26sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="493dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:animationCache="false"
+            android:background="#57514b"
+            android:orientation="vertical"
+            android:weightSum="22">
+
+            <TextView
+                android:id="@+id/Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Mark Rater"
+                android:textColor="@android:color/background_light"
+                android:textSize="45sp"
+                android:textStyle="normal|bold|italic"
+                app:fontFamily="casual" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="258dp"
+                android:layout_height="339dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="upload"
+                android:textColor="@android:color/background_light" />
+
+
+            <ImageButton
+                android:id="@+id/gallery"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/takepic"
+                android:layout_width="88dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:hapticFeedbackEnabled="false"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
